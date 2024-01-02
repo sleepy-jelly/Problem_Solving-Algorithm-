@@ -24,3 +24,33 @@ public class Main {
 	}
 
 }
+
+
+/**
+
+해답2 	17692KB	204ms
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		
+		int speedOfSnail = sc.nextInt();
+		int fallingValue = sc.nextInt();
+		int totalHeight = sc.nextInt();
+		
+		int day =(totalHeight-fallingValue)/(speedOfSnail-fallingValue);
+		
+		if((totalHeight-fallingValue)%(speedOfSnail-fallingValue)==0) {
+		}else {
+			day++;
+		}
+			System.out.println(day);
+		
+		sc.close();
+	}
+
+}
+
+*/
