@@ -1,6 +1,9 @@
-# [Gold IV] 이중 우선순위 큐 - 7662 
+# [Gold IV] Dual Priority Queue - 7662 
 
 [문제 링크](https://www.acmicpc.net/problem/7662) 
+
+
+### The English version is below the Korean
 
 ### 성능 요약
 
@@ -31,4 +34,21 @@
 ### 출력 
 
  <p>출력은 표준출력을 사용한다. 각 테스트 데이터에 대해, 모든 연산을 처리한 후 Q에 남아 있는 값 중 최댓값과 최솟값을 출력하라. 두 값은 한 줄에 출력하되 하나의 공백으로 구분하라. 만약 Q가 비어있다면 ‘EMPTY’를 출력하라.</p>
+
+
+
+A dual priority queue is a data structure in which we can insert and delete data like a typical queue. Its difference from a typical queue is that when an item is to be deleted from the queue either an item with highest priority or with lowest priority in it is deleted according to the operation for deletion. There are two operations for the dual priority queue, one for inserting an item into it, the other for deleting an item from it. Deletion operation itself has two parameters: one for deleting an item with highest priority from it, and the other for deleting an item with lowest priority. 
+
+Suppose there is a dual priority queue Q which stores integers only. The value of each integer in Q is considered the priority of itself. 
+
+Given a list of operations, write a program that processes the operations for Q and shows the minimum and maximum numbers in Q after finishing the operations. 
+
+
+
+Your program is to read from standard input. The input consists of T test cases. The number of test cases T is given in the first line of the input. Each test case starts with a line containing an integer k (k ≤ 1,000,000), the number of operations for Q. In the next k lines, each line contains either ‘D’ or ‘I’ followed by an integer n. Operation ‘I n’ means inserting integer n into Q. Note that the same integers can be inserted into Q. Operation ‘D 1’ means deleting the maximum number from Q. While Operation ‘D -1’ is used to delete the minimum number from Q. If there are two or more maxima (minima) in Q when the operation is ‘D 1’(‘D -1’), only one of them is deleted. 
+
+If Q is empty when the operation is ‘D’ you can ignore it. Each input to be inserted into Q is a an integer between -231 and 231-1, inclusive.
+
+
+Your program is to write to standard output. For each test case, print the maximum and the minimum numbers among those which remain in Q. The two numbers should be printed in a line separated by a blank. If Q is empty at the end, print ‘EMPTY’. 
 
